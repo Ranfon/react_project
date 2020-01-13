@@ -9,8 +9,7 @@ import reducers from "./reducers";
 
 export default createStore(
   reducers,
-  process.env,
-  NODE_ENV === "development"
+  process.env.NODE_ENV === "development"
     ? composeWithDevTools(applyMiddleware(thunk))
     : applyMiddleware(thunk)
 );
