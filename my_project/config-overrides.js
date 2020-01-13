@@ -4,7 +4,7 @@ const {
   addLessLoader,
   addDecoratorsLegacy,
   addWebpackAlias
-} = require("customizecra");
+} = require("customize-cra");
 
 module.exports = override(
   //按需加载
@@ -20,7 +20,7 @@ module.exports = override(
       "@primarycolor": "#1DA57A"
     }
   }),
-  //ES7装饰器语法
+  //ES7装饰器语法/
   addDecoratorsLegacy(),
   //配置webpack路径别名
   addWebpackAlias()
